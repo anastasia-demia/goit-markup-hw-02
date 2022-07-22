@@ -1,0 +1,131 @@
+body {
+    font-family: "Roboto", "sans-serif";
+    color: #212121;
+    background-color: #E5E5E5;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+/* header styling */
+.logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #2196F3;
+}
+.manu-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #212121;
+}
+.contact-info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px; 
+    color: #757575;   
+}
+.header {
+    background-color: white;
+}
+/* footer styling */
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address-white {
+    color: white;
+}
+.footer {
+    background-color: #2F303A;
+}
+
+/* portfolio styling */
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.portfolio-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+.button-color {
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    border-style: none;
+}
+.under-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;  
+}
+.what-filter {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+.portfolio-main {
+    background-color: white;
+}
+/* studio styling */
+.banner {
+    background-color: #2F303A;
+}
+.main-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    color: white;
+}
+.banner-button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: #2196F3;
+}
+.advantages {
+    background-color: white;
+}
+.advantages-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.advantages-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #757575;
+}
+.examples {
+    background-color: white;
+}
+.section-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+.team {
+    background-color: white;
+}
+.names {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+.positions {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
