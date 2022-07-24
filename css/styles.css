@@ -5,13 +5,23 @@ body {
     width: 1600px;
     margin: 0 auto;
 }
-
+button {
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 /* header styling */
 .logo {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
+    line-height: 1.19;
     color: #2196F3;
 }
 .logo:hover {
@@ -21,33 +31,33 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
     color: #212121;
 }
-.menu-nav:hover {
+.menu-nav:hover, .contact-info:hover, .address:hover {
     color: #2196F3;
 }
 .contact-info {
     font-style: normal;
     font-weight: 500;
     font-size: 14px; 
+    letter-spacing: 0.02em;
+    line-height: 1.14;
     color: #757575;   
-}
-.contact-info:hover {
-    color: #2196F3;
 }
 .header {
     background-color: white;
 }
-/* footer styling */
 
+/* footer styling */
 .address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-}
-.address:hover {
-    color: #2196F3;
 }
 .address-white {
     color: white;
@@ -63,14 +73,25 @@ body {
 .button-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px;
 }
 .portfolio-button {
+    padding-right: 8px;
+}
+.text {
+    margin: 6px 26px;
+}
+.text2 {
+    margin: 6px 53px;
+}
+.button-color {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-}
-.button-color {
+    letter-spacing: 0.03em;
+    line-height: 1.62;
+    text-align: center;
     background: #F5F4FA;
     border-radius: 4px;
     border-color: #F5F4FA;
@@ -84,11 +105,15 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;  
+    letter-spacing: 0.06em;
+    line-height: 2;
 }
 .what-filter {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.87;
     color: #757575;
 }
 .portfolio-main {
@@ -96,18 +121,28 @@ body {
 }
 /* studio styling */
 .banner {
+    padding: 150px;
     background-color: #2F303A;
 }
 .main-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
     color: white;
 }
 .banner-button {
+    display: flex;
+    justify-content: center;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.87;
     color: white;
     background-color: #2196F3;
 }
@@ -118,16 +153,28 @@ body {
 .advantages {
     background-color: white;
 }
+.advantages-hidden {
+    display: none;
+}
 .advantages-title {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
+}
+.advantages-list, .examples-list, .team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .advantages-text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: #757575;
 }
 .examples {
@@ -137,6 +184,12 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+}
+.section-title {
+    display: flex;
+    justify-content: center;
 }
 .team {
     background-color: white;
@@ -145,11 +198,15 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.18;
 }
 .positions {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
     color: #757575;
 }
-/* i understand that i did some styling than hw did not require but i hope they are correct :)  */
+/* pls ignore the request button being not in the right place, i cant figure out how to change it...  */
