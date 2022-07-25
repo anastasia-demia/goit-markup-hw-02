@@ -1,9 +1,13 @@
 body {
     font-family: "Roboto", "sans-serif";
-    color: #212121;
+    color: var(--text-color);
     background-color: #E5E5E5;
     width: 1600px;
     margin: 0 auto;
+}
+:root {
+    --main-color: #2196F3;
+    --text-color: #212121;
 }
 button {
     cursor: pointer;
@@ -16,16 +20,24 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 /* header styling */
+.nav, .menu-nav-list, .header, .contact-info-list {
+    display: flex;
+    flex-direction: row;
+}
 .logo {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3;
+    padding: 25px 40px 25px 215px;
+    color: var(--main-color);
+}
+.different-color {
+    color: #E5E5E5;
 }
 .logo:hover {
-    color: #212121;
+    color: var(--text-color);
 }
 .menu-nav {
     font-style: normal;
@@ -33,10 +45,15 @@ a, a:hover, a:focus, a:active {
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
-    color: #212121;
+    padding-right: 45px;
+    color: var(--text-color);
+}
+.menu-nav-list {
+    padding-top: 15px;
+    padding-right: 30px;
 }
 .menu-nav:hover, .contact-info:hover, .address:hover {
-    color: #2196F3;
+    color: var(--main-color);
 }
 .contact-info {
     font-style: normal;
@@ -44,6 +61,7 @@ a, a:hover, a:focus, a:active {
     font-size: 14px; 
     letter-spacing: 0.02em;
     line-height: 1.14;
+    margin-right: 50px;
     color: #757575;   
 }
 .header {
@@ -59,66 +77,20 @@ a, a:hover, a:focus, a:active {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
+.address-bottom {
+    padding-left: 180px;
+}
 .address-white {
     color: white;
 }
 .address-white:hover {
-    color: #2196F3;
+    color: var(--main-color);
 }
 .footer {
     background-color: #2F303A;
 }
 
-/* portfolio styling */
-.button-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-}
-.portfolio-button {
-    padding-right: 8px;
-}
-.text {
-    margin: 6px 26px;
-}
-.text2 {
-    margin: 6px 53px;
-}
-.button-color {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    line-height: 1.62;
-    text-align: center;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border-color: #F5F4FA;
-    border-style: none;
-}
-.button-color:hover {
-    background-color: #2196F3;
-    color: white;
-}
-.under-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;  
-    letter-spacing: 0.06em;
-    line-height: 2;
-}
-.what-filter {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    line-height: 1.87;
-    color: #757575;
-}
-.portfolio-main {
-    background-color: white;
-}
+
 /* studio styling */
 .banner {
     padding: 150px;
@@ -136,19 +108,18 @@ a, a:hover, a:focus, a:active {
     color: white;
 }
 .banner-button {
-    display: flex;
-    justify-content: center;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.06em;
     line-height: 1.87;
     color: white;
-    background-color: #2196F3;
+    background-color: var(--main-color);
+    margin-left: 550px;
 }
 .banner-button:hover {
     background-color: #F5F4FA;
-    color: #212121;
+    color: var(--text-color);
 }
 .advantages {
     background-color: white;
@@ -209,4 +180,54 @@ a, a:hover, a:focus, a:active {
     line-height: 1.19;
     color: #757575;
 }
-/* pls ignore the request button being not in the right place, i cant figure out how to change it...  */
+
+/* portfolio styling */
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+.portfolio-button {
+    padding-right: 8px;
+}
+.text {
+    margin: 6px 26px;
+}
+.text2 {
+    margin: 6px 53px;
+}
+.button-color {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.62;
+    text-align: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    border-style: none;
+}
+.button-color:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.under-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;  
+    letter-spacing: 0.06em;
+    line-height: 2;
+}
+.what-filter {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.87;
+    color: #757575;
+}
+.portfolio-main {
+    background-color: white;
+}
